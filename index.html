@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viza Shop FN | Cosméticos y regalos de Fortnite</title>
+  <meta name="description" content="Viza Shop FN: cosméticos y regalos de Fortnite. Rápido, seguro, económico y confiable." />
+  <link rel="stylesheet" href="styles.css?v=tienda-live-5" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="assets/logo.png" alt="Logo Viza Shop FN" />
+      <div>
+        <strong>Viza Shop FN</strong>
+        <span>Cosméticos y regalos</span>
+      </div>
+    </a>
+    <button class="menu-btn" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    <nav class="nav" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#precios">Precios</a>
+      <a href="#tienda">Tienda en vivo</a>
+      <a href="#comprar">Cómo comprar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Rápido · Seguro · Económico</p>
+        <h1>Cosméticos y regalos de Fortnite</h1>
+        <p>Consigue tus cosméticos favoritos con atención rápida y proceso sencillo.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://wa.me/527298723378" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="btn secondary" href="#tienda">Ver tienda en vivo</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/logo.png" alt="Viza Shop FN" />
+        <p>ID de Epic</p>
+        <h2>VizaAr10</h2>
+      </div>
+    </section>
+
+    <section class="section" id="precios">
+      <div class="section-head">
+        <p class="eyebrow">Tarifa base</p>
+        <h2>Precios en MXN</h2>
+        <p>Precio base: <strong>$9.50 MXN por cada 100 pavos</strong>.</p>
+      </div>
+      <div class="price-table">
+        <div class="price-row head"><span>Pavos</span><span>Precio</span></div>
+        <div class="price-row"><span>500</span><strong>$47.50 MXN</strong></div>
+        <div class="price-row"><span>800</span><strong>$76.00 MXN</strong></div>
+        <div class="price-row"><span>1,200</span><strong>$114.00 MXN</strong></div>
+        <div class="price-row"><span>1,500</span><strong>$142.50 MXN</strong></div>
+        <div class="price-row"><span>2,000</span><strong>$190.00 MXN</strong></div>
+        <div class="price-row"><span>2,500</span><strong>$237.50 MXN</strong></div>
+        <div class="price-row"><span>3,000</span><strong>$285.00 MXN</strong></div>
+        <div class="price-row"><span>3,500</span><strong>$332.50 MXN</strong></div>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="tienda">
+      <div class="shop-top">
+        <div>
+          <p class="eyebrow">Fortnite · actualización diaria</p>
+          <h2>Tienda de objetos</h2>
+          <p>Los artículos se cargan automáticamente y el precio se convierte a MXN usando tu tarifa: <strong>$9.50 por cada 100 pavos</strong>.</p>
+        </div>
+        <button class="btn secondary" id="refreshShop" type="button">Actualizar tienda</button>
+      </div>
+
+      <div class="shop-status-bar">
+        <p id="shopStatus">Cargando tienda en vivo...</p>
+        <p id="shopCount"></p>
+      </div>
+
+      <div class="shop-tabs" id="shopTabs" aria-label="Secciones de tienda"></div>
+      <div class="shop-grid-live" id="shopGrid" aria-live="polite"></div>
+      <p class="disclaimer small">La tienda en vivo depende de Fortnite-API.com, una API externa no oficial. Si Brave bloquea la carga, prueba desactivar Brave Shields para esta página o abrirla en Chrome/Edge.</p>
+    </section>
+
+    <section class="section steps" id="comprar">
+      <div class="section-head">
+        <p class="eyebrow">Proceso</p>
+        <h2>¿Cómo comprar?</h2>
+      </div>
+      <div class="steps-grid">
+        <article><b>Paso 1</b><span>Mándame solicitud en Epic. ID: <strong>VizaAr10</strong></span></article>
+        <article><b>Paso 2</b><span>Envíame DM con tu nombre de Epic.</span></article>
+        <article><b>Paso 3</b><span>Espera a que acepte la solicitud y el tiempo requerido para enviar regalos.</span></article>
+        <article><b>Paso 4</b><span>Dime qué cosméticos quieres.</span></article>
+        <article><b>Paso 5</b><span>Paga y envíame captura de tu pago.</span></article>
+        <article><b>Paso 6</b><span>Te envío tus regalos.</span></article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="section-head">
+        <p class="eyebrow">Contacto</p>
+        <h2>Haz tu pedido</h2>
+        <p>Escríbeme por cualquiera de estos medios.</p>
+      </div>
+      <div class="social-grid">
+        <a class="social instagram" href="https://www.instagram.com/vizashopfn/" target="_blank" rel="noopener" aria-label="Instagram de Viza Shop FN">
+          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17" cy="7" r="1.2"></circle></svg></span>
+          <div><b>Instagram</b><small>@vizashopfn</small></div>
+        </a>
+        <a class="social facebook" href="https://www.facebook.com/profile.php?id=61590679092110" target="_blank" rel="noopener" aria-label="Facebook de Viza Shop FN">
+          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.6.4-1 1-1z"></path></svg></span>
+          <div><b>Facebook</b><small>Viza Shop FN</small></div>
+        </a>
+        <a class="social whatsapp" href="https://wa.me/527298723378" target="_blank" rel="noopener" aria-label="WhatsApp de Viza Shop FN">
+          <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19l1-3a8 8 0 1 1 3 3l-4 0z"></path><path d="M9 9c.6 2 2 3.5 4 4l1.5-1.2 2 1c-.2 1-1.2 2.2-2.5 2.2-3.7 0-7-3.3-7-7 0-1.3 1.2-2.3 2.2-2.5l1 2L9 9z"></path></svg></span>
+          <div><b>WhatsApp</b><small>+52 729 872 3378</small></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Viza Shop FN no está afiliado, patrocinado ni respaldado por Epic Games.</p>
+  </footer>
+
+  <script src="script.js?v=tienda-live-5"></script>
+</body>
+</html>
